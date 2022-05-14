@@ -16,55 +16,13 @@ let action = 0;
 let another = 0;
 let result = 0;
 
-document.getElementById("btnOne").onclick = function() {
-    expression += 1;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnTwo").onclick = function() {
-    expression += 2;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnThree").onclick = function() {
-    expression += 3;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnFour").onclick = function() {
-    expression += 4;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnFive").onclick = function() {
-    expression += 5;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnSix").onclick = function() {
-    expression += 6;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnSeven").onclick = function() {
-    expression += 7;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnEight").onclick = function() {
-    expression += 8;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnNine").onclick = function() {
-    expression += 9;
-    document.getElementById('label').innerHTML = expression;
-}
-
-document.getElementById("btnZero").onclick = function() {
-    expression += 0;
-    document.getElementById('label').innerHTML = expression;
-}
+document.querySelectorAll('.btn-num').forEach((element, index) => {
+    element.onclick = function () {
+        expression += 9 - index;
+        console.log(expression);
+        document.getElementById('label').innerHTML = expression;
+    }
+});
 
 document.getElementById("btnDot").onclick = function() {
     expression += ".";

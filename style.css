@@ -100,10 +100,9 @@
     border-spacing: 0 0;
 }
 
-.btn-seven, .btn-eight, .btn-nine, .btn-plus, .btn-four, 
-.btn-five, .btn-six, .btn-minus, .btn-one, .btn-two, .btn-three, 
-.btn-multiply, .btn-zero, .btn-dot, .btn-sign, .btn-divide,
-.btn-equals, .btn-sin, .btn-cos, .btn-pow, .btn-clean, .btn-clear {
+.btn-num, .btn-plus, .btn-minus, .btn-multiply, .btn-zero, 
+.btn-dot, .btn-sign, .btn-divide, .btn-equals, .btn-sin, 
+.btn-cos, .btn-pow, .btn-clean, .btn-clear {
     border: none;
     width: 69px;
     height: 69px;
@@ -116,9 +115,7 @@
     color: rgb(147, 181, 255);
 }
 
-.btn-seven:hover, .btn-eight:hover, .btn-nine:hover, .btn-plus:hover,
-.btn-four:hover, .btn-five:hover, .btn-six:hover, .btn-minus:hover,
-.btn-one:hover, .btn-two:hover, .btn-three:hover, .btn-multiply:hover,
+.btn-num:hover, .btn-plus:hover, .btn-minus:hover, .btn-multiply:hover, 
 .btn-zero:hover, .btn-dot:hover, .btn-sign:hover, .btn-divide:hover,
 .btn-equals:hover, .btn-sin:hover, .btn-cos:hover, .btn-pow:hover,
 .btn-clean:hover, .btn-clear:hover {
