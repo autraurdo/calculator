@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="main">
+            <video autoplay muted loop id="bgVideo">
+                <source src="calcbg.mp4">
+            </video>
+
+            <button id="stopButton" onclick="playPause()">||</button>
+
+            <div class="main-content">
+                    <div class="calculator">                    
+                        <div class="screen">
+                            <table class="table-screen">                                
+                                <td><p id="label" class="label"></p></td>
+                                <td><button id="btnClean" class="btn-clean"><</button></td>
+                                <td><button id="btnClear" class="btn-clear">C</button></td>
+                            </table>                                                
+                        </div>
+                        <div class="buttons">
+                            <table class="table-btns">
+                                <tr class="rows">
+                                    <td><button id="btnSeven" class="btn-seven">7</button></td>
+                                    <td><button id="btnEight" class="btn-eight">8</button></td>
+                                    <td><button id="btnNine" class="btn-nine">9</button></td>
+                                    <td><button id="btnPlus" class="btn-plus">+</button></td>
+                                    <td><button id="btnSin" class="btn-sin">sin</button></td>
+                                </tr>
+                                <tr class="rows">
+                                    <td><button id="btnFour" class="btn-four">4</button></td>
+                                    <td><button id="btnFive" class="btn-five">5</button></td>
+                                    <td><button id="btnSix" class="btn-six">6</button></td>
+                                    <td><button id="btnMinus" class="btn-minus">-</button></td>
+                                    <td><button id="btnCos" class="btn-cos">cos</button></td>
+                                </tr>
+                                <tr class="rows">
+                                    <td><button id="btnOne" class="btn-one">1</button></td>
+                                    <td><button id="btnTwo" class="btn-two">2</button></td>
+                                    <td><button id="btnThree" class="btn-three">3</button></td>
+                                    <td><button id="btnMultiply" class="btn-multiply">*</button></td>
+                                    <td><button id="btnPow" class="btn-pow">^</button></td>
+                                </tr>
+                                <tr class="rows">
+                                    <td><button id="btnZero" class="btn-zero">0</button></td>
+                                    <td><button id="btnDot" class="btn-dot">.</button></td>
+                                    <td><button id="btnSign" class="btn-sign">±</button></td>
+                                    <td><button id="btnDivide" class="btn-divide">/</button></td>
+                                    <td><button id="btnEquals" class="btn-equals">=</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="blur-content"></div>                    
+                    </div>
+                    
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>
