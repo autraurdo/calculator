@@ -132,25 +132,23 @@ document.getElementById("btnSign").onclick = function() {
 document.getElementById("btnEquals").onclick = function() {
     switch(action) {
         case "+":
-            result = another + expression;
-            document.getElementById('label').innerHTML = result;
+            result = Number(another) + Number(expression);
             break;
         case "-":
-            result = another - Number(expression);
-            document.getElementById('label').innerHTML = result;
+            result = another - expression;
             break;
         case "*":
-            result = another * Number(expression);
-            document.getElementById('label').innerHTML = result;
+            result = another * expression;
             break;
         case "/":
-            result = another / Number(expression);
+            result = another / expression;
             document.getElementById('label').innerHTML = result.toFixed(2);
             break;
         case "^":
             result = pow(another, expression);
-            document.getElementById('label').innerHTML = result;
+            break;            
     }
+    document.getElementById('label').innerHTML = result;
     expression = "";
 }
 
