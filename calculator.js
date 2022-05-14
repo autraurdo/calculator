@@ -19,7 +19,6 @@ let result = 0;
 document.querySelectorAll('.btn-num').forEach((element, index) => {
     element.onclick = function () {
         expression += 9 - index;
-        console.log(expression);
         document.getElementById('label').innerHTML = expression;
     }
 });
